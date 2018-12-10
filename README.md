@@ -4,4 +4,4 @@
 application for jinexus-mvc applications.
 
 - File issues at https://github.com/jinexus-framework/jinexus-module-manager/issues
-- Documentation is at https://framework.jinexus.com/jinexus-module-manager/
+- Documentation is at https://framework.jinexus.com/documentation
