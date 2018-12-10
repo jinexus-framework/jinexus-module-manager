@@ -12,18 +12,8 @@ interface ModuleManagerInterface extends BaseInterface
 {
     /**
      * ModuleManagerInterface constructor
-     *
-     * @param $appConfig
      */
-    public function __construct($appConfig);
-
-    /**
-     * Add Module
-     *
-     * @param string $module
-     * @return bool
-     */
-    public function addModule($module = '');
+    public function __construct();
 
     /**
      * Get Modules
@@ -38,6 +28,14 @@ interface ModuleManagerInterface extends BaseInterface
      * @param array $modules
      */
     public function setModules($modules = []);
+
+    /**
+     * Add Module
+     *
+     * @param string $module
+     * @return bool
+     */
+    public function addModule($module = '');
 
     /**
      * Get Module config

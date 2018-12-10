@@ -11,11 +11,10 @@ use JiNexus\ModuleManager\ModuleManager\ModuleManager;
 class ModuleManagerFactory extends AbstractFactory
 {
     /**
-     * @param array $modules
      * @return ModuleManager
      */
-    public static function build($modules = [])
+    public static function build()
     {
-        return new ModuleManager($modules);
+        return new ModuleManager();
     }
 }

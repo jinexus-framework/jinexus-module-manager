@@ -17,27 +17,10 @@ abstract class AbstractModuleManager extends AbstractBase implements ModuleManag
      */
     protected $modules = [];
 
-    public function __construct($modules = [])
-    {
-        $this->setModules($modules);
-    }
-
     /**
-     * Add Module
-     *
-     * @param string $module
-     * @return bool
+     * AbstractModuleManager constructor
      */
-    public function addModule($module = '')
-    {
-        if (! in_array($module, $this->modules)) {
-            $this->modules[] = $module;
-
-            return true;
-        }
-
-        return false;
-    }
+    public function __construct() { }
 
     /**
      * Get Modules
@@ -61,6 +44,23 @@ abstract class AbstractModuleManager extends AbstractBase implements ModuleManag
                 $this->modules[] = $module;
             }
         }
+    }
+
+    /**
+     * Add Module
+     *
+     * @param string $module
+     * @return bool
+     */
+    public function addModule($module = '')
+    {
+        if (! in_array($module, $this->modules)) {
+            $this->modules[] = $module;
+
+            return true;
+        }
+
+        return false;
     }
 
     /**
